@@ -1,0 +1,117 @@
+/* Reset styles for better cross-browser consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove focus outlines, but maintain accessibility */
+*:focus {
+    outline: none;
+}
+
+/* Body styles */
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/contact.jpg');
+    /* background-color: bisque; */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Parent container styles */
+.parent {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Form styles */
+.form {
+    margin-top: 100px;
+    width: 80%; /* Adjusted width for better responsiveness */
+    max-width: 600px; /* Added max-width to prevent stretching on larger screens */
+    height: auto;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 30px;
+    padding-bottom: 5%;
+}
+
+/* Heading styles */
+.heading {
+    opacity: 0.8;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2rem; /* Adjusted font size for better readability */
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+/* Input, textarea, and submit button styles */
+input,
+textarea,
+.submit-btn {
+    width: 80%;
+    display: block;
+    margin: 20px 40px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #fff;
+    padding: 15px;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+
+/* Input and textarea placeholder styles */
+input::placeholder,
+textarea::placeholder {
+    color: #fff;
+}
+
+/* Input, textarea, and submit button focus/hover styles */
+input:focus,
+textarea:focus,
+.submit-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Input and textarea placeholder focus styles */
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: #000;
+}
+
+/* Submit button styles */
+.submit-btn {
+    width: 25%;
+    padding: 15px 20px;
+    cursor: pointer;
+    opacity: 1; /* Adjusted opacity to make the button visible */
+    margin: 50px auto 0;
+}
+
+/* Link styles */
+.link {
+    opacity: 0;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    margin: 30px auto;
+}
+
+/* Link hover style */
+.link:hover {
+    color: #fff;
+}

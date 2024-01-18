@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+        <div>
+            <!-- Inserting an image with the <img> tag -->
+            <img width="300px" style="margin-top: 150px;" src="/logo.png" alt="Logo Image">
+            <!-- <img src="/img/logo.png" alt=""> -->
+        </div>
+         <div class="form">
+             <h1 class="heading">Contact Us</h1>
+             <form method="post" action="/submit">
+                <!-- <label for="name">Name</label> -->
+                 <input type="text" placeholder="Name" class="name" name="name" autocomplete="off" required>
+                 <!-- <label for="email">Email:</label> -->
+                 <input type="email" placeholder="Email" class="email" name="email" autocomplete="off" required>
+                 <textarea placeholder="Your Message" class="message" rows="4" required></textarea>
+                 <input class="submit-btn" type="submit" value="Send Message">
+             </form>
+         </div>
+     </div>
+</body>
+</html>
